@@ -24,5 +24,5 @@ exec-bc: ## Build and execute bytecode executable
 	@dune exec ./freq.bc
 
 .PHONY: exec-exe
-exec-exe: ## Build and execute bytecode executable
+exec-exe: ## Build and execute native executable
 	@dune exec ./freq.exe
