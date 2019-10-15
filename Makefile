@@ -11,10 +11,18 @@ help: ## Show this help
 format: ## Format files
 	@dune build @fmt --auto-promote
 
-.PHONY: build
-build: ## Build
+.PHONY: build-bc
+build-bc: ## Build bytecode executable
 	@dune build freq.bc
 
-.PHONY: exec
-exec: ## Build and execute
+.PHONY: buid-exe
+build-exe: ## Build native executable
+	@dune build freq.exe
+
+.PHONY: exec-bc
+exec-bc: ## Build and execute bytecode executable
 	@dune exec ./freq.bc
+
+.PHONY: exec-exe
+exec-exe: ## Build and execute bytecode executable
+	@dune exec ./freq.exe
