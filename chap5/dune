@@ -1,3 +1,8 @@
+(env
+ (dev
+  (flags
+   (:standard -w @A-4-33-40-41-42-43-34-44))))
+
 (executable
-    (name      freq)
-    (libraries base stdio))
+ (name freq)
+ (libraries base stdio))
